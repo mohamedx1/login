@@ -1,0 +1,30 @@
+^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+
+
+This pattern checks for the following basic rules:
+
+The email address should contain a local part (before the @ symbol) and a domain part (after the @ symbol).
+The local part can contain alphanumeric characters, dots, underscores, percentage signs, and hyphens.
+The domain part can contain alphanumeric characters and hyphens, with at least one dot separating the domain and subdomain.
+
+
+"Please enter a valid email address in the format example@example.com."
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+The regular expression ^[a-zA-Z0-9_-]{3,16}$ is used to validate a username that consists of alphanumeric characters, underscores, and hyphens, with a length between 3 and 16 characters.
+
+"Please enter a username that consists of 3 to 16 characters, using only letters, numbers, hyphens, and underscores."
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+passwordPattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+
+At least 8 characters long
+Contains at least one digit
+Contains at least one lowercase letter
+Contains at least one uppercase letter
+
+"Please enter a password that is at least 8 characters long and includes at least one uppercase letter, one lowercase letter, and one digit."

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Login</title>
+    <!-- Bootstrab css file  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- main css file -->
+    <link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="home.html">
+</head>
+<body>
+    <div class="container signup">
+	<div class="screen">
+		<div class="screen__content">
+			<div class="signUp">
+				<div class="main_field">
+					<i class="signUp__icon fas fa-user"></i>
+					<input type="text" id="userNameInput" class="main_input" placeholder="User name / Email">
+				</div>
+				<div>
+					<p id="alertUserName" class="text-danger myAlert"></p>
+				</div>
+				<div class="main_field">
+					<i class="fa-solid fa-envelope  signUp__icon"></i>
+					<input type="email" id="emailInput" class="main_input" placeholder="Email">
+				</div>
+				<div>
+					<p id="alertEmail" class="text-danger myAlert"></p>
+				</div>
+				<div class="main_field">
+					<i class="signUp__icon fas fa-lock"></i>
+					<input type="password" id="passwordInput" class="main_input" placeholder="Password">
+				</div>
+				<div>
+					<p id="alertPassword" class="text-danger myAlert"></p>
+				</div>
+				<div class="text-center">
+					<p id="alertAll" class="text-danger myAlert"></p>
+				</div>
+				<button id="signInButton" class="button submit">
+					<span class="button__text">Sign Up Now</span>
+					<i class="button__icon fas fa-chevron-right"></i>
+				</button>
+				<div class="swith_login">
+					<span class="text- d-inline-block mt-2">You have an account? <a id="to_signin" class="text-decoration-line text-black">Login</a> </span>
+				</div>
+			</div>
+
+		</div>
+		<div class="screen__background">
+			<span class="screen__background__shape screen__background__shape4"></span>
+			<span class="screen__background__shape screen__background__shape3"></span>
+			<span class="screen__background__shape screen__background__shape2"></span>
+			<span class="screen__background__shape screen__background__shape1"></span>
+		</div>
+	</div>
+</div>
+<div  class="container login d-none">
+	<div class="screen">
+		<div class="screen__content">
+			<div class="logIn">
+				<div>
+					<p id="alertUserNameLogin" class="text-danger myAlert"></p>
+				</div>
+				<div class="main_field">
+					<i class="fa-solid fa-envelope  signUp__icon"></i>
+					<input type="email" id="emailInputLogin" class="main_input email" placeholder="Email">
+					<div>
+						<p id="alertEmail" class="text-danger myAlert"></p>
+					</div>
+				</div>
+				<div class="main_field">
+					<i class="signUp__icon fas fa-lock"></i>
+					<input type="password" id="passwordInputLogin" class="main_input" placeholder="Password">
+				</div>
+				<div>
+					<p id="alertPasswordLogin" class="text-danger myAlert"></p>
+				</div>
+				<div class="text-center">
+					<p id="alertAllLogin" class="text-danger myAlert"></p>
+				</div>
+				<button id="logInButtonLogin" class="button submit">
+					<span class="button__text">log in</span>
+					<i class="button__icon fas fa-chevron-right"></i>
+				</button>
+			</div>
+
+		</div>
+		<div class="screen__background">
+			<span class="screen__background__shape screen__background__shape4"></span>
+			<span class="screen__background__shape screen__background__shape3"></span>
+			<span class="screen__background__shape screen__background__shape2"></span>
+			<span class="screen__background__shape screen__background__shape1"></span>
+		</div>
+	</div>
+</div>
+    <script src="js/main.js"></script>
+</body>
+</html>

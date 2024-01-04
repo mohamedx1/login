@@ -1,0 +1,23 @@
+body {
+    background: linear-gradient(90deg, #C7C5F4, #776BcC);
+}
+
+main {
+    /* display: inline-block; */
+    margin-left: 50%;
+    margin-top: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    background-color: white;
+    min-height:300px;
+    width: 800px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
